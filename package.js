@@ -20,7 +20,7 @@ Package.onTest(function(api) {
     'sanjo:jasmine@0.20.2'
   ]);
 
-  api.use('k');
+  api.use('korrigans:k');
 
   api.addFiles('tests/namespace.js');
 });
