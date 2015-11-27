@@ -39,4 +39,4 @@ $ set VELOCITY_TEST_PACKAGES=1 &&
 
 ## License
 
-[MIT](../blob/master/LICENSE)
+[MIT](../master/LICENSE)
