@@ -1,6 +1,6 @@
 Package.describe({
   name: 'korrigans:k',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'Define a namespace K. By itself this package does nothing.',
   git: 'https://github.com/Korrigans/meteor-k.git',
   documentation: 'README.md'
