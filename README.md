@@ -22,9 +22,10 @@ In your Meteor app directory, enter:
 
 ## Dependants
 
--   [meteor-k-check][2] alias *koriggans:k-check*
--   [meteor-k-pattern][3] alias *koriggans:k-pattern*
--   [meteor-k-schema][4] alias *koriggans:k-schema*
+-   [meteor-k-debug][2] alias *koriggans:k-debug*
+-   [meteor-k-check][3] alias *koriggans:k-check*
+-   [meteor-k-pattern][4] alias *koriggans:k-pattern*
+-   [meteor-k-schema][5] alias *koriggans:k-schema*
 
 ## Testing
 
@@ -39,18 +40,19 @@ In your Meteor app directory, enter:
 
 ## Contributors
 
--   **MrLowkos**: [@github][5] - [@atmosphere][6]
--   **Aralun**: [@github][7] - [@atmosphere][8]
+-   **MrLowkos**: [@github][6] - [@atmosphere][7]
+-   **Aralun**: [@github][8] - [@atmosphere][9]
 
 ## License
 
 [MIT](../master/LICENSE)
 
 [1]: https://github.com/Korrigans
-[2]: https://github.com/Korrigans/meteor-k-check
-[3]: https://github.com/Korrigans/meteor-k-pattern
-[4]: https://github.com/Korrigans/meteor-k-schema
-[5]: https://github.com/MrLowkos
-[6]: https://atmospherejs.com/mrlowkos
-[7]: https://github.com/Aralun
-[8]: https://atmospherejs.com/aralun
+[2]: https://github.com/Korrigans/meteor-k-debug
+[3]: https://github.com/Korrigans/meteor-k-check
+[4]: https://github.com/Korrigans/meteor-k-pattern
+[5]: https://github.com/Korrigans/meteor-k-schema
+[6]: https://github.com/MrLowkos
+[7]: https://atmospherejs.com/mrlowkos
+[8]: https://github.com/Aralun
+[9]: https://atmospherejs.com/aralun
