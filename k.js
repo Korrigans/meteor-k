@@ -7,7 +7,7 @@ K = {};
 /**
  * Namespace for internals functions
  * Those functions are not tested and shoud not be used in production
- * @namespace internals
+ * @namespace Internals
  * @memberof K
  */
-K.internals = {};
+K.Internals = {};

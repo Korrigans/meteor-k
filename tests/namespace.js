@@ -7,11 +7,11 @@ describe('[k][Unit] Namespaces', () => {
       expect(typeof K).toEqual('object');
     });
 
-    describe('K.internals', () => {
+    describe('K.Internals', () => {
 
       it('should exist and be an object', () => {
-        expect(K.internals).toBeDefined();
-        expect(typeof K.internals).toEqual('object');
+        expect(K.Internals).toBeDefined();
+        expect(typeof K.Internals).toEqual('object');
       });
 
     });
