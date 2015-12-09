@@ -1,19 +1,31 @@
 describe('[k][Unit] Namespaces', () => {
-
   describe('K', () => {
-
     it('should exist and be an object', () => {
-      expect(K).toBeDefined();
-      expect(typeof K).toEqual('object');
+      const
+        expected = 'object',
+        actual = typeof K;
+
+      expect(actual).toEqual(expected);
     });
 
-    describe('K.Internals', () => {
-
+    describe('Internals', () => {
       it('should exist and be an object', () => {
-        expect(K.Internals).toBeDefined();
-        expect(typeof K.Internals).toEqual('object');
-      });
+        const
+          expected = 'object',
+          actual = typeof K.Internals;
 
+        expect(actual).toEqual(expected);
+      });
+    });
+
+    describe('ErrorLog', () => {
+      it('should exist and be an object', () => {
+        const
+          expected = 'object',
+          actual = typeof K.ErrorLog;
+
+        expect(actual).toEqual(expected);
+      });
     });
   });
 });

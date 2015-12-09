@@ -11,3 +11,10 @@ K = {};
  * @memberof K
  */
 K.Internals = {};
+
+/**
+ * Storage for errors thrown by avrious Korrigans packages
+ * @namespace ErrorLog
+ * @memberof K
+ */
+K.ErrorLog = {};
