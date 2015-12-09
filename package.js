@@ -35,7 +35,7 @@ Package.onTest(function onTest(api) {
 
   api.addFiles([
     'tests/namespace.js',
-    'tests/error-log.js'
+    'tests/error-log/main.js'
   ]);
 
   api.imply('korrigans:k');
