@@ -35,6 +35,10 @@ Package.onTest(function onTest(api) {
 
   api.addFiles([
     'tests/namespace.js',
+    'tests/error-log/constants.js',
+    'tests/error-log/add.js',
+    'tests/error-log/clear.js',
+    'tests/error-log/log.js',
     'tests/error-log/main.js'
   ]);
 

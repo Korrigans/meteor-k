@@ -709,6 +709,11 @@ module.exports = {
     }
   },
   globals: {
-    K: true
+    K: true,
+
+    testFieldName: true,
+    testKErrorLogAdd: true,
+    testKErrorLogLog: true,
+    testKErrorLogClear: true
   }
 };
