@@ -1,3 +1,9 @@
+/**
+ * Creates a new registry with given name and max size (optional)
+ * @param {String} name                                Name of new registry
+ * @param {Number} [maxSize=K.ErrorLog.defaultMaxSize] Max size of new registry
+ * @return {undefined}
+ */
 K.ErrorLog.add = function KErrorLogAdd(name, maxSize) {
   let registrySize = maxSize;
 

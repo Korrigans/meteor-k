@@ -1,3 +1,9 @@
+/**
+ * Adds an entry to specified registry
+ * @param  {String} name  Name of registry to log onto
+ * @param  {*} entry      Entry to log
+ * @return {Number}       Index of new entry
+ */
 K.ErrorLog.log = function KErrorLogLog(name, entry) {
   if (!_.includes(_.keys(K.ErrorLog), name)) {
     throw new Error(`Unknown error registry ${name}`);

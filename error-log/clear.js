@@ -1,3 +1,8 @@
+/**
+ * Empties a given registry
+ * @param  {String} name name of registry to empty
+ * @return {undefined}
+ */
 K.ErrorLog.clear = function KErrorLogClear(name) {
   if (!_.includes(_.keys(K.ErrorLog), name)) {
     throw new Error(`Could not find registry ${name}`);
