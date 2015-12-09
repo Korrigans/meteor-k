@@ -3,13 +3,16 @@
 *koriggans:k*
 
 Meteor package to define a namespace "K" for
-[**Korrigans**][1] packages and applications.
-By itself this package does nothing.
+[**Korrigans**][1] packages and applications.  
+It also defines an `Internals` namespace to reference various internals
+methods and fields for Korrigans packages, and an `ErrorLog` namespace
+to use as a registry.
 
 ## Table of Contents
 
 -   [Installation](#installation)
 -   [Dependants](#dependants)
+-   [Error registry](#error-registry)
 -   [Testing](#testing)
 -   [Contributors](#contributors)
 -   [License](#license)
@@ -19,6 +22,44 @@ By itself this package does nothing.
 In your Meteor app directory, enter:
 
     $ meteor add koriggans:k
+
+## Error registry
+
+This package defines an error registry `K.ErrorLog` which can be used to
+log and store errors.  
+To use, define a registry with `K.ErrorLog.add`:
+
+```javascript
+K.ErrorLog.add('my registry');
+```
+
+You can store any JavaScript value inside this log. To log an entry:
+
+```javascript
+const logIndex = K.ErrorLog.log('my registry', { foo : 'value' });
+```
+
+Each registry is an array. To retrieve an entry:
+
+```javascript
+K.ErrorLog['my registry'][logIndex];
+```
+
+To empty the registry:
+
+```javascript
+K.ErrorLog.clear('my registry');
+```
+
+Each registry has a maximum size (to avoid logging thousands of errors on
+production servers). The default size of each registry is 10 entries.  
+If one tries to log an entry in a full registry, oldest value is discarded.
+
+You can specify a max size to be used for a specific registry at creation:
+
+```javascript
+K.ErrorLog.add('my registry', 42);
+```
 
 ## Dependants
 
