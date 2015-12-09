@@ -9,7 +9,7 @@ K.ErrorLog.log = function KErrorLogLog(name, entry) {
     registry.shift();
   }
 
-  K.ErrorLog[name].push(entry);
+  return K.ErrorLog[name].push(entry) - 1;
 };
 
 Object.defineProperty(K.ErrorLog, 'log', {

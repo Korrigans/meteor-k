@@ -26,6 +26,26 @@ testKErrorLogLog = function testKErrorLogLog() {
 
       expect(actual).toEqual(testEntry);
     });
+
+    it('should return new log index', () => {
+      const
+        testEntry = 'foo',
+        testIndexes = [],
+        entriesAmount = 5;
+
+      for (let i = 0; i < entriesAmount; i++) {
+        testIndexes.push(
+          K.ErrorLog.log(testFieldName, testEntry)
+        );
+      }
+
+      /* eslint no-magic-numbers:0 */
+
+      const expected = [0, 1, 2, 3, 4];
+
+      expect(testIndexes).toEqual(expected);
+    });
+
     describe('size control', () => {
       it('should not let registry size exceed specified max size', () => {
         const maxSize = K.ErrorLog[testFieldName].maxSize;
